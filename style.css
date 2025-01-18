@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-fundo-menu: #EDD625;
+    --cor-do-link: #000000;
+    --cor-do-titulo: #333333;
+    --cor-texto: #555555;
+    --fonte-principal: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    line-height: 1.6;
+    color: var(--cor-texto);
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+/* ------------------------------ Menu -------------------------------*/
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--cor-de-fundo-menu);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho__logo {
+    max-width: 80px;
+}
+
+.cabecalho__titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-do-titulo);
+}
+
+.navegacao__lista {
+    display: flex;
+    gap: 1rem;
+}
+
+.navegacao__elemento a {
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navegacao__elemento a:hover {
+    color: #444;
+}
+
+/* ------------------------------ Apresentação ------------------------------*/
+.apresentacao {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #FFF;
+}
+
+.apresentacao__foto {
+    border-radius: 50%;
+    max-width: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.apresentacao__conteiner {
+    max-width: 600px;
+}
+
+.apresentacao__titulo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--cor-do-titulo);
+}
+
+.apresentacao__subtitulo {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.redes {
+    display: flex;
+    gap: 1rem;
+}
+
+.redes__elemento a {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.3s;
+}
+
+.redes__elemento a:hover {
+    transform: scale(1.05);
+}
+
+/* ------------------------------ Sobre mim -------------------------------*/
+.sobre-mim {
+    padding: 2rem;
+    background-color: #FFF;
+}
+
+.sobre-mim__titulo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--cor-do-titulo);
+}
+
+.sobre-mim__texto {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--cor-texto);
+}
+
+.sobre-mim__assinatura {
+    max-width: 150px;
+    margin-top: 1rem;
+}
+
+/* ------------------------------ Habilidades -------------------------------*/
+.habilidades {
+    padding: 2rem;
+    background-color: #F9F9F9;
+}
+
+.habilidades__titulo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--cor-do-titulo);
+}
+
+.habilidades__lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.habilidades__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.habilidades__icone {
+    max-width: 80px;
+    margin-bottom: 0.5rem;
+}
+
+.habilidades__nome {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* ------------------------------ Hobbies -------------------------------*/
+.hobbies {
+    padding: 2rem;
+    background-color: #FFF;
+}
+
+.hobbies__titulo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--cor-do-titulo);
+}
+
+.hobbies__lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.hobbies__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hobbies__icone {
+    max-width: 80px;
+    margin-bottom: 0.5rem;
+}
+
+.hobbies__nome {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* ------------------------------ Formação Acadêmica -------------------------------*/
+.formacao {
+    padding: 2rem;
+    background-color: #F9F9F9;
+}
+
+.formacao__titulo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--cor-do-titulo);
+}
+
+.formacao__lista {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.formacao__elemento {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.formacao__icone {
+    max-width: 50px;
+}
+
+.formacao__nome {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.formacao__detalhe {
+    font-size: 1rem;
+    color: var(--cor-texto);
+}
+
+/* ------------------------------ Projetos -------------------------------*/
+.projetos {
+    padding: 2rem;
+    background-color: #FFF;
+}
+
+.projetos__titulo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--cor-do-titulo);
+}
+
+.projetos__conteiner {
+    margin-bottom: 1.5rem;
+}
+
+.projetos__nome {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.projetos__descricao {
+    font-size: 1rem;
+    color: var(--cor-texto);
+}
+
+/* ------------------------------ Contato -------------------------------*/
+.contato {
+    padding: 2rem;
+    background-color: #F9F9F9;
+}
+
+.contato__titulo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--cor-do-titulo);
+}
+
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contato__campo {
+    padding: 0.75rem;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contato__campo--textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contato__botao {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cor-de-fundo-menu);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contato__botao:hover {
+    background-color: #D4C225;
+}
+
+/* ------------------------------ Responsividade -------------------------------*/
+@media (min-width: 768px) {
+    .apresentacao {
+        flex-direction: row;
+    }
+
+    .sobre-mim, .habilidades, .hobbies, .formacao, .projetos, .contato {
+        padding: 4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .apresentacao {
+        gap: 3rem;
+    }
+
+    .habilidades__lista, .hobbies__lista, .formacao__lista {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
